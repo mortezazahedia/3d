@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block contents %}
+    <style>
+        table {
+            width: 90%;
+            border-collapse: collapse;
+            border: 2px solid #333;
+        }
+
+        td {
+            width: 30%;
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+    </style>
+
+
+    <h1>List of Users</h1>
+    <table>
+    <h3>{% for item in template_users %} </h3>
+        <tr>
+            <td>{{ item.name }}</td>
+            {% if item.email != null %}
+                <td>{{ item.email }}</td>
+            {% else %}
+                <td style="color:red" >UnKnown</td>
+            {% endif %}
+            <td>{{ item.age }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    {% endblock %}

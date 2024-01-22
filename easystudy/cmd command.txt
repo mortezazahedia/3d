@@ -1,0 +1,15 @@
+#### by default run hello.py
+(base) PS D:\Learning\farin14021007\UD-20532\excercise\1-flask1> flask run
+
+#didn't work
+(base) PS D:\Learning\farin14021007\UD-20532\excercise\1-flask1> set FLASK_APP=webapp.py 
+
+#### se result
+------------------ default port for flask is 
+see the result in
+http://127.0.0.1:5000/
+
+
+#### webapp.py
+(base) PS D:\Learning\farin14021007\UD-20532\excercise\1-flask1> python .\webapp.py
+http://127.0.0.1:5000/
